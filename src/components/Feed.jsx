@@ -22,6 +22,15 @@ const Feed = () => {
           Copyright 2023 Najeeb Sultan
         </Typography>
       </Box>
+      <Box>
+        <Typography 
+          variant="h4" 
+          fontWeight="bold"  mb= {2}  sx= {{ 
+            color: '#fff',
+           }} >
+        New <span style={{color: '#F31503' }}>videos</span>
+        </Typography>
+      </Box>
     </Stack>
   )
 }
