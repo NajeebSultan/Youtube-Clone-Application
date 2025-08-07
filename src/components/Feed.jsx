@@ -5,6 +5,13 @@ import { fetchFromAPI } from '../utils/fetchFromAPI';
 import{  Sidebar , Videos } from './';
 
 const Feed = () => {
+
+  const [selectedCategory,
+     setSelectedCategory] = useState('New');
+
+  useEffect (() => {
+    fetchFromAPI(`search?part=snippet&q= ${selectedCategory}`) 
+  }, [])
   return (  
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       {/* Sidebar */}
