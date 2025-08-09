@@ -30,7 +30,8 @@ const [ videos , setVideos] = useState([])
 
         }}
  />
-        <ChannelCard channelDetail={channelDetail} />
+        <ChannelCard channelDetail={channelDetail} 
+         marginTop="-93px" />
         
       </Box>
        
