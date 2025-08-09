@@ -12,6 +12,10 @@ const ChannelDetail = () => {
  useEffect(() => {
   fetchFromAPI(`channels?part=snippet&id=${id}`)
   .then((data) => setChannelDetail(data?.items[0]));
+
+
+  fetchFromAPI(`search?ChannelId=${id}&part=snippet&order=date`)
+  .then((data) => setVideos(data?.items));
 } , [id]);
   return (  
     <div>ChannelDetail</div>
