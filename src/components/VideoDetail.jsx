@@ -31,7 +31,11 @@ const VideoDetail = () => {
             </Typography>
             <Stack direction="row" justifyContent="space-between" sx={{
               color: '#fff'}} py={1} px ={2}>
-                
+                <Link to={`/channel/${channelId}`}>
+                <Typography>
+                  {channelTitle}
+                </Typography>
+                </Link>
 
             </Stack>
           </Box>
