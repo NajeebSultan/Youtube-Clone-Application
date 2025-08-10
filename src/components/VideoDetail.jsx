@@ -1,5 +1,5 @@
 import { useState , useEffect} from 'react';
-import { link , useParams} from 'react-router-dom';
+import { Link , useParams} from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { Typography ,Box , Stack } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
@@ -56,12 +56,13 @@ const VideoDetail = () => {
           </Box>
         </Box>
 
-      </Stack>
+      
 
       <Box px={2} py={{md: 1 , xs: 5}} justifyContent= "center"
       alignItems="center">
        <Videos videos={videos} direction = "column" />
       </Box>
+      </Stack>
     </Box>
   )
 }
